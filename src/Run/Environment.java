@@ -19,6 +19,11 @@ public class Environment {
 	}
 	
 	public Variable getVariable(String name) {
-		return env.get(new Value(value));
+		for (Variable var : env.keySet()) {
+			if (var.equals(name)) {
+				return var;
+			}
+		}
+		return null;
 	}
 }
