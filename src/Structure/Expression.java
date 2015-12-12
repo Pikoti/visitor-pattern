@@ -1,9 +1,13 @@
 package Structure;
 
+import Visitor.Printer;
 import Visitor.Visitor;
 
 public abstract class Expression {
 
-	public abstract void accept(Visitor visitor);
+	public abstract <T> void accept(Visitor<T> visitor);
 	
+	public String print(Printer printer) {
+		return "";
+	}
 }

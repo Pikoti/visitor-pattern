@@ -9,49 +9,49 @@ import Structure.binary.Multiply;
 import Structure.binary.Plus;
 
 
-public class Evaluator extends Visitor {
+public class Evaluator extends Visitor<Integer> {
 
 	@Override
-	public void visitBinary(Binary binary) {
+	public Integer visitBinary(Binary binary) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override
-	public void visitAtomic(Atomic atomic) {
+	public Integer visitAtomic(Atomic atomic) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override
-	public void visitLiteral(Literal literal) {
+	public Integer visitLiteral(Literal literal) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override
-	public void visitPlus(Plus plus) {
+	public Integer visitPlus(Plus plus) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override
-	public void visitMinus(Minus minus) {
+	public Integer visitMinus(Minus minus) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override
-	public void visitDivide(Divide divide) {
+	public Integer visitDivide(Divide divide) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override
-	public void visitMultiply(Multiply multiply) {
+	public Integer visitMultiply(Multiply multiply) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
-
+	
 }

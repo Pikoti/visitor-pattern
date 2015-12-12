@@ -9,8 +9,8 @@ public class Literal extends Atomic {
 		this.value = value;
 	}
 	
-	public void accept(Visitor visitor) {
-		
-	}
+	public <T> void accept(Visitor<T> visitor) {
+		// TODO Auto-generated method stub
+	}	
 
 }

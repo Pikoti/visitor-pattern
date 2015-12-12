@@ -11,45 +11,45 @@ import Structure.binary.Plus;
 public class PrinterPostfix extends Printer{
 
 	@Override
-	public void visitBinary(Binary binary) {
+	public String visitBinary(Binary binary) {
 		// TODO Auto-generated method stub
-		
+		return "";
 	}
 
 	@Override
-	public void visitAtomic(Atomic atomic) {
+	public String visitAtomic(Atomic atomic) {
 		// TODO Auto-generated method stub
-		
+		return "";
 	}
 
 	@Override
-	public void visitLiteral(Literal literal) {
+	public String visitLiteral(Literal literal) {
 		// TODO Auto-generated method stub
-		
+		return "";
 	}
 
 	@Override
-	public void visitPlus(Plus plus) {
+	public String visitPlus(Plus plus) {
 		// TODO Auto-generated method stub
-		
+		return "";
 	}
 
 	@Override
-	public void visitMinus(Minus minus) {
+	public String visitMinus(Minus minus) {
 		// TODO Auto-generated method stub
-		
+		return "";
 	}
 
 	@Override
-	public void visitDivide(Divide divide) {
+	public String visitDivide(Divide divide) {
 		// TODO Auto-generated method stub
-		
+		return "";
 	}
 
 	@Override
-	public void visitMultiply(Multiply multiply) {
+	public String visitMultiply(Multiply multiply) {
 		// TODO Auto-generated method stub
-		
+		return "";
 	}
 
 }

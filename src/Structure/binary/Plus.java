@@ -9,5 +9,8 @@ public class Plus extends Binary{
 		super(e1,e2);
 	}
 
-	public void accept(Visitor visitor) {}
+	@Override	
+	public <T> void accept(Visitor<T> visitor) {
+		// TODO Auto-generated method stub
+	}
 }

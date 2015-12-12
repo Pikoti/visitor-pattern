@@ -10,8 +10,9 @@ public class Variable extends Atomic {
 		this.name = name;
 	}
 	
-	public void accept(Visitor visitor) {
+	@Override
+	public <T> void accept(Visitor<T> visitor) {
+		// TODO Auto-generated method stub
 		
 	}
-
 }
