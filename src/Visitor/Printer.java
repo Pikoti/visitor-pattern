@@ -2,56 +2,28 @@ package Visitor;
 
 import Structure.atomic.Atomic;
 import Structure.atomic.Literal;
+import Structure.atomic.Variable;
 import Structure.binary.Binary;
-import Structure.binary.Divide;
-import Structure.binary.Minus;
-import Structure.binary.Multiply;
-import Structure.binary.Plus;
 
 public class Printer extends Visitor<String> {
-
+	
 	@Override
 	public String visitBinary(Binary binary) {
-		// TODO Auto-generated method stub
-		return "";
+		return "(" + binary.getOperand1().toString() + binary.getOperator() + binary.getOperand2().toString() + ")";
 	}
 
 	@Override
 	public String visitAtomic(Atomic atomic) {
-		// TODO Auto-generated method stub
-		return "";
+		return this.toString();
 	}
 
 	@Override
 	public String visitLiteral(Literal literal) {
-		// TODO Auto-generated method stub
-		return "";
+		return literal.getValue().toString();
 	}
 
 	@Override
-	public String visitPlus(Plus plus) {
-		// TODO Auto-generated method stub
-		return "";
+	public String visitVariable(Variable variable) {
+		return variable.getName();
 	}
-
-	@Override
-	public String visitMinus(Minus minus) {
-		// TODO Auto-generated method stub
-		return "";
-	}
-
-	@Override
-	public String visitDivide(Divide divide) {
-		// TODO Auto-generated method stub
-		return "";
-	}
-
-	@Override
-	public String visitMultiply(Multiply multiply) {
-		// TODO Auto-generated method stub
-		return "";
-	}
-
-	
-
 }
