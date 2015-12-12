@@ -1,5 +1,7 @@
 package Structure.atomic;
 
+import Visitor.Visitor;
+
 public class Variable extends Atomic {
 
 	protected String name;
@@ -8,11 +10,8 @@ public class Variable extends Atomic {
 		this.name = name;
 	}
 	
-	public String getName() {
-		return name;
+	public void accept(Visitor visitor) {
+		
 	}
-	
-	public String print() {
-		return name;
-	}
+
 }

@@ -8,7 +8,7 @@ import Structure.binary.Minus;
 import Structure.binary.Multiply;
 import Structure.binary.Plus;
 
-public class Printer extends Visitor {
+public class PrinterPostfix extends Printer{
 
 	@Override
 	public void visitBinary(Binary binary) {
@@ -51,7 +51,5 @@ public class Printer extends Visitor {
 		// TODO Auto-generated method stub
 		
 	}
-
-	
 
 }
