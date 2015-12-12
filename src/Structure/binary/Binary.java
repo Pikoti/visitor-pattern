@@ -1,4 +1,7 @@
-package Structure;
+package Structure.binary;
+
+import Structure.Expression;
+import Visitor.Visitor;
 
 public class Binary extends Expression{
 	protected Expression operand2;
@@ -8,7 +11,6 @@ public class Binary extends Expression{
 		this.operand1 = e1;
 		this.operand2 = e2;
 	}
-	
-	
-	
+
+	public void accept(Visitor visitor) {}
 }

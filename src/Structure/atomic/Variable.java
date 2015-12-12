@@ -1,6 +1,6 @@
-package Run;
+package Structure.atomic;
 
-public class Variable {
+public class Variable extends Atomic {
 
 	protected String name;
 	
@@ -9,6 +9,10 @@ public class Variable {
 	}
 	
 	public String getName() {
+		return name;
+	}
+	
+	public String print() {
 		return name;
 	}
 }
