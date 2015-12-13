@@ -1,8 +1,6 @@
 package Structure;
 
 import java.util.HashMap;
-import java.util.NoSuchElementException;
-
 import Structure.atomic.Literal;
 import Structure.atomic.Variable;
 
@@ -28,6 +26,6 @@ public class Environment {
 				return var;
 			}
 		}
-		throw new NoSuchElementException();
+		return null;
 	}
 }

@@ -1,5 +1,6 @@
 package Structure.atomic;
 
+import Structure.Environment;
 import Visitor.Visitor;
 
 public class Literal extends Atomic {
@@ -14,8 +15,8 @@ public class Literal extends Atomic {
 	}
 	
 	@Override
-	public <T> void accept(Visitor<T> visitor) {
-		visitor.visitLiteral(this);
+	public <T> void accept(Visitor<T> visitor,Environment en) {
+		visitor.visitLiteral(this,en);
 	}	
 
 }
