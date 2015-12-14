@@ -22,7 +22,7 @@ public class Environment {
 	
 	public Variable getVariable(String name) {
 		for (Variable var : env.keySet()) {
-			if (var.equals(name)) {
+			if (var.getName().equals(name)) {
 				return var;
 			}
 		}

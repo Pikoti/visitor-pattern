@@ -1,6 +1,5 @@
 package Visitor;
 
-import Structure.atomic.Atomic;
 import Structure.atomic.Literal;
 import Structure.atomic.Variable;
 import Structure.binary.Divide;
@@ -9,11 +8,6 @@ import Structure.binary.Multiply;
 import Structure.binary.Plus;
 
 public class Printer extends Visitor<String> {
-	
-	@Override
-	public String visitAtomic(Atomic atomic) {
-		return this.toString();
-	}
 
 	@Override
 	public String visitLiteral(Literal literal) {
@@ -27,21 +21,21 @@ public class Printer extends Visitor<String> {
 
 	@Override
 	public String visitPlus(Plus plus) {
-		return "(" + plus.getOperand1().accept(this) + "+" + plus.getOperand2().toString() + ")";
+		return "(" + plus.getOperand1().accept(this) + "+" + plus.getOperand2().accept(this) + ")";
 	}
 
 	@Override
 	public String visitDivide(Divide divide) {
-		return "(" + divide.getOperand1().toString() + "/" + divide.getOperand2().toString() + ")";
+		return "(" + divide.getOperand1().accept(this) + "/" + divide.getOperand2().accept(this) + ")";
 	}
 
 	@Override
 	public String visitMultiply(Multiply multiply) {
-		return "(" + multiply.getOperand1().toString() + "*" + multiply.getOperand2().toString() + ")";
+		return "(" + multiply.getOperand1().accept(this) + "*" + multiply.getOperand2().accept(this) + ")";
 	}
 
 	@Override
 	public String visitMinus(Minus minus) {
-		return "(" + minus.getOperand1().toString() + "-" + minus.getOperand2().toString() + ")";
+		return "(" + minus.getOperand1().accept(this) + "-" + minus.getOperand2().accept(this) + ")";
 	}
 }
