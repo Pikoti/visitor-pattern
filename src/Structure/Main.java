@@ -14,8 +14,6 @@ public class Main {
 			Literal one = new Literal(1);
 	        Literal two = new Literal(2);
 	        Expression e = new Plus(one,two);
-	        
-	      //  Integer ln =  e.accept(eval, en);
-	
+
 	}
 }

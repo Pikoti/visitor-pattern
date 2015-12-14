@@ -4,5 +4,5 @@ import Visitor.Visitor;
 
 public abstract class Expression {
 
-	public abstract <T> void accept(Visitor<T> visitor, Environment en);
+	public abstract <T> T accept(Visitor<T> visitor);
 }
